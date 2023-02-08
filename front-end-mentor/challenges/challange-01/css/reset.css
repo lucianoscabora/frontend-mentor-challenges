@@ -1,0 +1,10 @@
+html {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{  
+    --bg-main: hsl(30, 38%, 92%);
+    --dark-green: hsl(158, 36%, 37%);
+    --bg-card: hsl(0, 0%, 100%);
+    --dark-blue: hsl(212, 21%, 14%);
+    --dark-grey: hsl(228, 12%, 48%);
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-main);
+}
+
+.main-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--bg-card);
+    display: flex;
+    width: 650px;
+    height: 500px;
+   
+}
+
+.left-side {
+    background-image: url(../images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex: 1;
+}
+
+
+.right-side {
+    padding: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+
+.left-first-title {
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: var(--dark-grey);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.left-second-title {
+    color: var(--dark-blue);
+    line-height: 40px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Fraunces', serif;
+}
+
+.left-text {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: var(--dark-grey);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.left-price {
+    display: flex;
+    align-items: center;
+}
+
+.left-price .discount {
+    font-weight: 700;
+    color: var(--dark-green);
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.left-price .full-price {
+    font-weight: 700;
+    color: var(--dark-grey);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+}
+
+.cart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 10px;
+    color: var(--bg-card);
+    margin-top: 20px;
+    background-color: var(--dark-green);
+    height: 50px;
+}
+
+.cart-place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cart-button p {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+
+.cart-button p::before {
+    content: '';
+    background-image: url(../images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    margin-right: 10px;
+}
